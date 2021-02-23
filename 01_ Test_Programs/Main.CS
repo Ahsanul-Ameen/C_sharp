@@ -1,7 +1,7 @@
 using System;
 
 
-class Starter {
+public class Starter {
 
   // overloaded print methods
   private static void print(int goat) {
@@ -74,7 +74,27 @@ class Starter {
       }
   }
 
-  static void Main(string[] args) {
+  struct Name { 
+    public int id;
+  };
+
+  // Declaring a new method for some task
+  private static void task_1() {
+    int n = Convert.ToInt32(Console.ReadLine());
+    // do something
+    for(int i = 0; i < n; i++) {
+      //print n #'s
+      for(int j = 0; j < n; j++) {
+        Console.Write('#');
+      }
+      //adopt a newline
+      Console.Write('\n');
+    }
+
+  }
+
+  
+  public static void Main(string[] args) {
     
       // printMultiplication(13); // 13 er namta will be printed by calling this method
       int n = 5; // for user input
@@ -96,6 +116,16 @@ class Starter {
       // foreach(char ch in name) {
       //   print(ch);
       // }
+
+      System.Console.Write("Okay Boss!");
+      
+      
+
+      Name okay;
+      okay.id = 100;
+
+      System.Console.WriteLine(okay.id);
+
      
   }
 }
