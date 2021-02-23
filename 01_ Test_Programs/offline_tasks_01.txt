@@ -1,0 +1,83 @@
+// general instructions: 
+1. first try to understant the problem using pen & paper
+2. then think of how to solve(example: using for loop and what not...)
+3. try to code in a clean way
+4. if fails, then google it
+5. don't copy paste any code from internet without understandint it
+6. try to tweak your code and see how it behaves
+7. best of luck
+
+//------------------------------------------Code it hard--------------------------------------------------------------
+#Task_01: Write a program(you may write a new method) which takes a string as user input and output its reversed version.
+	example: Input: "Dhaka" (withoud quotes)
+			 Output: "akahD" (without quotes)
+	hint: you may want to swap the first character with the last one, second char with the previous last one and so on.
+			 
+			 
+			 
+			 
+#Task_02: Write a program(you may write a new method) which takes the value of an integer N as user input and prints a N by N grid as output.
+	example: Input: 5
+			 Output: #####
+			 		 #####
+			 		 #####
+			 		 #####
+			 		 #####
+			 
+			 		 		 		
+			 		 
+			 		 
+#Task_03: Write a program(you may write a new method) which takes the value of an integer N as user input and prints a right-angle triangle as output.
+	example: Input: 4
+			 Output: #
+			 		 ##
+			 		 ###
+			 		 ####
+			 		 
+			 
+			 
+			 		 
+#Task_04: Write a program(you may write a new method) which takes the value of an integer N as user input and prints a right-angle triangle as output.
+	example: Input: 4
+			 Output:  ****
+			 		   ***
+			 		    **
+			 		     *
+			 		     
+			 		     
+			 		     
+			 		     
+#Task_05: Write a program(you may write a new method) which takes the value of an integer N as user input and prints a  triangle as output.
+	example: Input: 5
+			 Output:  	*			// line 1: 2 * 1 - 1 = 2 - 1 = 1			 		    
+			           ***				
+			          *****
+			         *******		// line 4: 2 * 4 - 1 = 8 - 1 = 7
+			        *********
+	hint: there are (2*i - 1) characters printed in line i
+	
+	
+	
+	
+	
+#Task_06:  Write a program(you may write a new method) which takes the value of an integer N as user input and output the sum of all natural numbers up to N.
+	example: Input_1: 6
+			 Output_1: 21     // 1 + 2 + 3 + 4 + 5 + 6 = 21
+			 
+			 Input_2: 10
+			 Output_2: 55
+			 
+			 
+			 
+			 
+#Task_07: Write a program(you may write a new method) which prints the alphabets in a semi-triangular form as output.
+	example: Output: a
+			 		 bc
+			 		 def
+			 		 ghij
+			 		 klmno
+			 		 pqrstu
+			 		 vwxyz
+			 		 
+			 		 
+//--------------------------------------(don't) Try Not to Code--------------------------------------------------------------

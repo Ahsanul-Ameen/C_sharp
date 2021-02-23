@@ -1,0 +1,16 @@
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/myapp
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/myapp.deps.json
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/myapp.runtimeconfig.json
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/myapp.runtimeconfig.dev.json
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/myapp.dll
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/ref/myapp.dll
+/home/ubuntu/Documents/C#/myapp/bin/Debug/net5.0/myapp.pdb
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.csprojAssemblyReference.cache
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.AssemblyInfoInputs.cache
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.AssemblyInfo.cs
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.csproj.CoreCompileInputs.cache
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.dll
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/ref/myapp.dll
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.pdb
+/home/ubuntu/Documents/C#/myapp/obj/Debug/net5.0/myapp.genruntimeconfig.cache
