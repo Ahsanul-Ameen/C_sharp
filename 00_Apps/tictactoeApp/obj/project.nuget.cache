@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8vIiBgLjiuUk35GdBnDUuYFlm/o4yZ0xcG66tBr5Xrcn5dP88FufiQeag2/xy4vS7PnJSNRsbvssuok0w4LrhQ==",
+  "dgSpecHash": "6H7AEx3S+jKjIS4cpQ11AKFZfAeUvzyznU9jmbauczxZT/hRNly1E3H4cUcS4KaJv/6t5Q/4Tk/bYZ8QrKZ8gQ==",
   "success": true,
-  "projectFilePath": "/home/ubuntu/Documents/C#/tictactoeApp/tictactoeApp.csproj",
+  "projectFilePath": "/home/ubuntu/Documents/C#/C_sharp/00_Apps/tictactoeApp/tictactoeApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

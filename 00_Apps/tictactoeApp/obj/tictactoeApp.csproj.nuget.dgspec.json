@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ubuntu/Documents/C#/tictactoeApp/tictactoeApp.csproj": {}
+    "/home/ubuntu/Documents/C#/C_sharp/00_Apps/tictactoeApp/tictactoeApp.csproj": {}
   },
   "projects": {
-    "/home/ubuntu/Documents/C#/tictactoeApp/tictactoeApp.csproj": {
+    "/home/ubuntu/Documents/C#/C_sharp/00_Apps/tictactoeApp/tictactoeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ubuntu/Documents/C#/tictactoeApp/tictactoeApp.csproj",
+        "projectUniqueName": "/home/ubuntu/Documents/C#/C_sharp/00_Apps/tictactoeApp/tictactoeApp.csproj",
         "projectName": "tictactoeApp",
-        "projectPath": "/home/ubuntu/Documents/C#/tictactoeApp/tictactoeApp.csproj",
+        "projectPath": "/home/ubuntu/Documents/C#/C_sharp/00_Apps/tictactoeApp/tictactoeApp.csproj",
         "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/home/ubuntu/Documents/C#/tictactoeApp/obj/",
+        "outputPath": "/home/ubuntu/Documents/C#/C_sharp/00_Apps/tictactoeApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ubuntu/.nuget/NuGet/NuGet.Config"

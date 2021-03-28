@@ -3,6 +3,7 @@ using System.Text;
 
 
 
+
 public class Starter {
 
 
@@ -179,7 +180,84 @@ private static void task_2() {
     Console.WriteLine(ache_kina + " indx: " + found_indx);
   }
 
+  // task _05
+ private static int countStr(string needle, string haystack) {
 
+  //  in:  "poor", "A poor needle in haystack!"
+	// 	   out: 1
+		   
+	// 	   in:  "noodle", "A poor needle in haystack!"
+	// 	   out: 0
+		   
+	// 	   in:  " ", "A_poor needle in haystack!"
+	// 	   out: 3
+
+    int len1 = needle.Length;
+    int len2 = haystack.Length;
+    int count = 0;
+    for(int beg_indx = 0; beg_indx < len2; beg_indx++) {
+      if (beg_indx + len1 - 1 >= len2) {
+        break;
+      }
+
+      // "xyz0123456" // staring_indx + length - 1 // 3 + 7 - 1 = 9
+      // supporse needle starts from here
+      // beg_indx + len1 - 1  // [7 + 0, 7 + 1, 7 + 2, 7 + 3, 7 + 4, 7 + 5]
+      bool found = true;
+      //"poor" "random poor guy"
+      for(int j = 0; j < len1; j++) {
+        if(needle[j] != haystack[beg_indx + j]) {
+          found = false;
+          break;
+        }
+      }
+      if(/*prev index of first matched index shoul also be a space &&*/ found  /* && snext index of last matched index is a space*/) {
+        count++;
+        Console.WriteLine("found at: " + beg_indx);
+      }
+    }
+    return count;
+ }
+
+//  Task_06: Write a program that takes a binary string as input and prints the equivalent decimal value.
+// sample_IO: in: 1000101
+// 		   out: 69
+		   
+// 		   in: 10
+// 		   out: 2
+		   
+// 		   in: 11111111111111111111111111111111
+// 		   out: -1 (to be tested...)
+
+private static int binToDec(string bin_string) {
+  int dec = 0;
+  int value = 1;
+  int len = bin_string.Length;
+  for(int i = len - 1; i >= 0; i--) {
+    if(bin_string[i] == '1') {
+      dec += value;
+    }
+    value =  value << 1; // value *= 2; // left shift
+  }
+  return dec;
+}
+
+private static string decToBin(int decim) {
+     StringBuilder sb = new StringBuilder("00000000000000000000000000000000", 50);
+    /// 
+     int place = 31;
+     while(decim >= 0 && place >= 0) {
+       //if(condition) a else b
+       //condition ? a : b;
+       sb[place--] = (decim % 2) == 1 ? '1' : '0'; // store the remainder // using Ternary operatior
+       decim /= 2;  // update new decim as qoutient
+     }
+     while(place >= 0) {
+       sb[place] = '0';
+       place--;
+     }
+     return sb.ToString();
+}
 
   
   public static void Main(string[] args) {
@@ -187,6 +265,10 @@ private static void task_2() {
     //task_1();
     //task_3();
     //task_3(false);
-	  findInSortedArray(999);
+	  //findInSortedArray(999);
+    //Console.WriteLine(countStr("poor", "poor ! Arandom poor guy is less poor er than me! poor"));
+    int store = binToDec("1101010101010100011");
+    Console.WriteLine(store);
+    Console.WriteLine(decToBin(store));
   }
 }
