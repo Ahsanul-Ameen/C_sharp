@@ -230,33 +230,40 @@ private static void task_2() {
   // 		   out: -1 (to be tested...)
 
   private static int binToDec(string bin_string) {
-    int dec = 0;
-    int value = 1;
-    int len = bin_string.Length;
-    for(int i = len - 1; i >= 0; i--) {
-      if(bin_string[i] == '1') {
-        dec += value;
-      }
-      value =  value << 1; // value *= 2; // left shift
+    int decimal_val = 0;
+    int positional_value = 1; // 2^0
+    int bit_len = bin_string.Length;
+
+    // traverse from LSB to MSB (Least to Most Significant Bit i.e. Right to Left...) 
+    for(int pos = bit_len - 1; pos >= 0; pos--) {
+      // eiter take the positional value or not according to the bit
+      decimal_val += ((bin_string[pos] == '1') ? 1 : 0) * positional_value; 
+      // if(bin_string[pos] == '1') {
+      //   decimal_val = decimal_val +  positional_value;
+      // }
+      positional_value <<= 1; // value *= 2; // left shift
     }
-    return dec;
+    return decimal_val;
   }
 
-  private static string decToBin(int decim) {
-      StringBuilder sb = new StringBuilder("00000000000000000000000000000000", 50);
-      /// 
-      int place = 31;
-      while(decim >= 0 && place >= 0) {
-        //if(condition) a else b
-        //condition ? a : b;
-        sb[place--] = (decim % 2) == 1 ? '1' : '0'; // store the remainder // using Ternary operatior
-        decim /= 2;  // update new decim as qoutient
+  private static string decToBin(int decimal_value) {
+      StringBuilder bit_builder = new StringBuilder();
+    
+      int place = 0;
+      while(place < 32) {
+        char last_bit = (decimal_value & 1) == 1 ? '1' : '0'; // comsume the remainder (while % 2)
+        bit_builder.Append(last_bit);
+        decimal_value >>= 1;  // divide by two
+        if(place++ % 4 == 3) {
+          bit_builder.Append('\t');
+        }
       }
-      while(place >= 0) {
-        sb[place] = '0';
-        place--;
-      }
-      return sb.ToString();
+
+      string rev_bit_string = bit_builder.ToString();
+      
+      char[] charArray = rev_bit_string.ToCharArray();
+      Array.Reverse( charArray );
+      return new string( charArray );
   }
 
   // Task 08
@@ -322,10 +329,11 @@ private static void task_2() {
     
     //Console.WriteLine(countStr("poor", "poor ! Arandom poor guy is less poor er than me! poor"));
     
-    // int store = binToDec("1101010101010100011");
-    // Console.WriteLine(store);
-    
-    // Console.WriteLine(decToBin(store));
+    string bit_string = "1101010101010100011";
+    Console.WriteLine("Decimal value of " + bit_string + " = " + binToDec(bit_string));
+  
+    int decimal_v = 436899;
+    Console.WriteLine("Binary representation of " + decimal_v + " = " + decToBin(decimal_v));
     
     Console.WriteLine("[{0}]", string.Join(", ", prefixSum(new int[] {4, 0, 5, -8, -3, 11, 20})));
     Console.WriteLine("[{0}]", string.Join(", ", prefixSum(new int[] {2, 2, 2, 2, 100, 0})));
