@@ -38,7 +38,7 @@ namespace tictactoeApp
             if(AreAll(board, new Position[] {
                     new Position(2, 0),
                     new Position(1, 1),
-                    new Position(0, 3) }, player)) 
+                    new Position(0, 2) }, player)) 
                 return true;
 
             return false;
