@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <iostream>
 
 using std::string;
