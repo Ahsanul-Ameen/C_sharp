@@ -34,6 +34,7 @@ int main(int argc, char** argv) {
 
     int i = 0, j = 0;
 	// this is goto statement, rarely used, frequent in assembly
+	printf("loop 1\n");
     Loop1: 
         print(i, j);
         ++i, j--;
@@ -42,6 +43,7 @@ int main(int argc, char** argv) {
     printf("\n");
     
     //loop 2
+    printf("loop 2\n");
     for(; ; ) { // for(optional expression_1; optexpr_2; optexpr_3) {}
 		--i, ++j;
 		if(i == 0) break;
@@ -50,13 +52,15 @@ int main(int argc, char** argv) {
     printf("\n");
 	
 	//loop 3
-	for(int i=10, j = 20; i < j; ++i, --j) {
+	printf("loop 3\n");
+	for(int i = 10, j = 20; i < j; ++i, --j) {
 		print(i, j);
 	}
 	print(i, j);
     printf("\n");
 	
 	//loop 4
+	printf("loop 4\n");
 	i = 5, j = 3;
 	while(i--) {
 		print(i, ++j);
@@ -64,7 +68,9 @@ int main(int argc, char** argv) {
 	print(i, j);
     printf("\n");
 	
+
 	// loop 5
+	printf("loop 5\n");
 	while(--j) {
 		print(++i, j);
 	}
@@ -72,6 +78,7 @@ int main(int argc, char** argv) {
     printf("\n");
     
     //loop 6
+    printf("loop 6\n");
     do {
 		print(i, j);
 	} while(!(i-- < ++j)); // semicolon!!!
@@ -79,29 +86,35 @@ int main(int argc, char** argv) {
 	puts("");
 	
 	//loop 7
+	printf("loop 7\n");
 	// do you know about octal number system?
-	i = 011, j = -043;
+	i = 011, j = -043; // i = 9, j = -35
+
 	print(i, j);
 	while(j++);
+
 	print(i, j);
 	puts("");
     
     //loop 8
-    while(i) {
-		//printf("i : %d, (--i): %d\n", i, (--i));
-		cout <<"inside loop 8: " << i << ", " << --i << endl; 
+    printf("loop 8\n");
+    while(i) { // undefined behaviour // be careful
+		printf("i : %d, (--i): %d\n", i, (--i));
+		//cout <<"inside loop 8: " << i << ", " << --i << endl; 
 	}
-	print(i, j);
+	print(i, j); // 
 	puts("");
 	
 	//loop 9
 	//evaluate binary -> decimal
-	char *str = "1011001"; // 89
+	char *str = "1011001"; // 89 // asteric -> pointer of an array
 	int decNum = 0;
 	for(; *str != '\0'; ++str) { 
-		decNum = (decNum << 1) + (*str == '1');
+		char bit = *str;
+		int bit_val = (bit == '1'); // 1 or 0
+		decNum = (decNum << 1) + bit_val; // 0 / 1
 	}
-	printf("Decimal val : %d\n\n", decNum);
+	printf("Decimal val : %d \n\n", decNum);
 
     return 0;
 }
