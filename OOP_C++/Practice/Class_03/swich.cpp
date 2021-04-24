@@ -3,16 +3,14 @@
 
 // no if-else usage
 int main() {
-	int marks;
+	double marks;
 	bool fail = false; 
 
 	do {
+		printf("Enter your marks: ");
+		scanf("%lf", &marks);
 
-
-		scanf("%d", &marks);
-		printf("marks = %d\n", marks);
-
-		switch (marks/10) {
+		switch ((int)marks/10) {
 			case 10:
 			case 9:
 			case 8:
@@ -36,10 +34,6 @@ int main() {
 				break;
 		}
 	} while (!fail);
-
-	
-
-	
 
 
 	//80  - 100 A+
