@@ -2,7 +2,7 @@
 using namespace std;
 using pcc = pair<char, char>;
 
-pcc operateTwoChars(char a, char b, bool add = true) {
+pcc operateTwoChars(char a, char b, bool add = true) { // default value
 	int ai(a-'0'), bi(b-'0');	
 	(add) ? ai += bi : ai *= bi;
 	return make_pair(ai / 10 + '0', ai % 10 + '0');
@@ -11,20 +11,32 @@ pcc operateTwoChars(char a, char b, bool add = true) {
 // consider them as REVERSED already
 string addTwoString(const string &a, const string &b) {
 	char carry = '0';
+
 	int n = min(a.size(), b.size()), m = max(a.size(), b.size());
+	
 	string sum(m + 1, '0');
+	
 	for(int i = 0; i < m; i++) {
+		
 		char ca('0'), cb('0');
+		
 		if (i < n) ca = a[i], cb = b[i];
 		else if (a.size() < b.size()) cb = b[i];
 		else ca = a[i];
 
-		pcc s = operateTwoChars(ca, cb);
+		pcc s = operateTwoChars(ca, cb); // carry , sum_value
+
 		pcc new_sum_carry = operateTwoChars(carry, s.second);
+
+
 		sum[i] = new_sum_carry.second;
+		
 		s = operateTwoChars(new_sum_carry.first, s.first);
+		
+
 		carry = s.second;
 	}
+	
 	sum[m] = carry;
 	return sum;
 }
