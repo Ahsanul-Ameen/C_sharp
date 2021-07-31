@@ -60,7 +60,7 @@ string multiply (const string &multiplicand, const string &multiplier) {
 		layer_res += string(n * m + 1 - layer_res.size(), '0'); 
 		result = addTwoString(result, layer_res);
 	}
-	while(!result.empty() && result.back() == '0') result.pop_back();
+	 while(result.length() > 1 && result.back() == '0') result.pop_back();
 	
 	
 	reverse(begin(result), end(result));

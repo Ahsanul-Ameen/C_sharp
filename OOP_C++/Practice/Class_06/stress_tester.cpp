@@ -15,14 +15,13 @@ template<typename T>
 ostream& operator<<(ostream& os, const vector<T> &t) { for(const auto& i: t) os<<i<<" "; return os; }
  
 
-
-
+//--------------------------------------------
 string addition (string str, string str2)
 {
     int add;
     char carry;
     char sum = '0';
-    string res = " ";
+    string res2 = "";
     int m = max(str.size(), str2.size());
     int n = min(str.size(), str2.size()); 
     string gtr(m-n, '0');
@@ -44,34 +43,151 @@ string addition (string str, string str2)
         add = (str[i] - '0') + (str2[i] - '0') + (sum - '0');
         carry = add%10 + '0';
         sum = add/10 + '0';
-        res.push_back(carry);
+        res2.push_back(carry);
     }
-    res.push_back(sum);
-      if (res[res.size()-1] == '0')
+    res2.push_back(sum);
+      if (res2[res2.size()-1] == '0')
     {
-        res.pop_back();
+        res2.pop_back();
     }
-    reverse(res.begin(), res.end());
-    //cout << res;
-    return res;
+    reverse(res2.begin(), res2.end());
+    return res2;
 }
 
+string multiply(string multiplicand, string multiplier)
+{
+    if(multiplicand.length() < multiplier.length())
+        swap(multiplicand, multiplier);
+    
+    int m = multiplicand.length(), n = multiplier.length();
+   
+    string res("0"), temp;
+    int multi, counter(0);
+    char sum, carry;
+
+    for (int i = n-1; i >= 0; i--)
+    {
+        temp = string(counter++, '0');
+        carry = '0'; // it was missing
+
+        for (int j = m-1; j >= 0; j--)
+        {
+            multi = (multiplicand[j]-'0') * (multiplier[i]-'0') + carry - '0';
+            sum = multi % 10 + '0';
+            carry = multi / 10 + '0';
+            temp.push_back(sum);
+        } 
+        if(carry != '0')
+            temp.push_back(carry);
+
+        reverse(all(temp));
+     
+        res = addition(res, temp);
+    }
+
+    reverse(all(res));
+    while(res.length() > 1 && res.back() == '0') res.pop_back(); // handle case like 12 * 0 = 0
+    reverse(all(res));
+    return res;
+}
+//---------------------------------------
+
+using pcc = pair<char, char>;
+
+pcc operateTwoChars(char a, char b, bool add = true) { // default value
+    int ai(a-'0'), bi(b-'0');   
+    (add) ? ai += bi : ai *= bi;
+    return make_pair(ai / 10 + '0', ai % 10 + '0');
+}
+
+// consider them as REVERSED already
+string addTwoString(const string &a, const string &b) {
+    char carry = '0';
+
+    int n = min(a.size(), b.size()), m = max(a.size(), b.size());
+    
+    string sum(m + 1, '0');
+    
+    for(int i = 0; i < m; i++) {
+        
+        char ca('0'), cb('0');
+        
+        if (i < n) ca = a[i], cb = b[i];
+        else if (a.size() < b.size()) cb = b[i];
+        else ca = a[i];
+
+        pcc s = operateTwoChars(ca, cb); // carry , sum_value
+
+        pcc new_sum_carry = operateTwoChars(carry, s.second);
 
 
+        sum[i] = new_sum_carry.second;
+        
+        s = operateTwoChars(new_sum_carry.first, s.first);
+        
 
+        carry = s.second;
+    }
+    
+    sum[m] = carry;
+    return sum;
+}
 
-void tester(ll a, ll b) {
+string multiply_okay (const string &multiplicand, const string &multiplier) {
+    int n = multiplicand.size(), m = multiplier.size();
+    string result(n * m + 1, '0');
+    for (int i = m - 1; i >= 0; i--) { 
+        string layer_res(m - i - 1, '0'); 
+        char layer_carry('0');
+        for (int j = n - 1; j >= 0; --j) {
+            pair <char, char> mul_res = operateTwoChars(multiplier[i], multiplicand[j], false);
+            pair <char, char> add_carry = operateTwoChars(layer_carry, mul_res.second);     
+            layer_res.push_back(add_carry.second);
+            
+            pair <char, char> new_carry = operateTwoChars(mul_res.first, add_carry.first);
+            layer_carry = new_carry.second;
+        }
+        
+        layer_res.push_back(layer_carry);
+        layer_res += string(n * m + 1 - layer_res.size(), '0'); 
+        result = addTwoString(result, layer_res);
+    }
+    while(result.length() > 1 && result.back() == '0') result.pop_back();
+    
+    
+    reverse(begin(result), end(result));
+    return result;
+} 
+//-------------------------------------------------------
 
-	string add_value = addition(to_string(a), to_string(b));
-	ll sum = stol(add_value);
+string random_string( size_t length )
+{
+    auto randchar = []() -> char
+    {
+        const char charset[] =
+        "9018723654";
+        const size_t max_index = (sizeof(charset) - 1);
+        return charset[ rand() % max_index ];
+    };
+    std::string str(length,0);
+    std::generate_n( str.begin(), length, randchar );
+    return str;
+}
+ //------------------------------------------------
+
+void tester(string a, string b) {
+
+	string test_result = multiply(a, b);
+	string correct_result = multiply_okay(a, b);
 	
-	ll correct_sum = a + b;
-	cout << sum << " | " << correct_sum << endl;
-	
-	if(sum != correct_sum) {
-		cout << "____Input " << a << " + " << b << " failed___ [Checker: " << correct_sum << " ], [your_code: " << sum << "]\n";
+
+	if(test_result != correct_result) {
+		cout << "____Input " << a << " * " << b 
+             << "\nfailed___ [Checker: " << correct_result 
+             << " ], [your_code: " << test_result << "]\n";
 	}
-	assert(sum == correct_sum);
+
+	assert(test_result == correct_result);
 }
 
 
@@ -84,13 +200,13 @@ void stress_tester() {
     //or what have you.
     std::uniform_int_distribution<unsigned long long> distr;
 	
-	const ll MAX = 1e16 + 7;
+	const ll MAX = 3;
 	
 	while(true) {
-		ll a = distr(eng) % MAX;
-		ll b = distr(eng) % MAX;
+		size_t n = distr(eng) % MAX + 1;
+		size_t m = distr(eng) % MAX + 1;
 		
-		tester(a, b);
+		tester(random_string(n), random_string(m));
 	}
 }
 
