@@ -4,14 +4,14 @@ gcc easy_version.c -w -o easy_version.exe && ./easy_version.exe 40
 ```
 ##### Here any value of n can be assigned instead of 40
 ##### As we're using command line argument
-
-
+---
 ## Commands to compile pascal_pattern.cpp
 ```
 g++ -o pp.exe pascal_pattern.cpp && ./pp.exe
 ```
 ##### Then enter the value of n
 
+---
 
 # Look at me! :) 
 ```
