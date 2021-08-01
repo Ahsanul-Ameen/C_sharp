@@ -20,6 +20,7 @@ ostream& operator<<(ostream& os, const vector<T> &t) { for(const auto& i: t) os<
 void test_case(int nt) {
 	// write your coe here
 	int n;
+	cout << "Enter n : ";
 	cin >> n;
 	
 	vector<vector<int>> layer(2, vector<int>(n, 0));
