@@ -256,10 +256,10 @@ test on your own
 
 Problem 19:
 
+![Binary Tree](.images/ftree.PNG)
+
 ```
 If you already solved the problem for finding the nth fibonacci number, then you must have a clear vision on how the program flow works. So now, in this problem, print the values of your fibonacci function in pre-order, in-order and post-order traversal. For example, when n = 5, your program calls 3 and 4 from it, from the call of 3, your program calls 1 and 2 again....... here is the picture:
-
-![Binary Tree](.images/ftree.PNG)
 
 Input:
 5
