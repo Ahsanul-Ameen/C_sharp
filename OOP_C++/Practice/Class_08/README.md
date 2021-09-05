@@ -1,7 +1,7 @@
-[Tutorial](http://zobayer.blogspot.com/2009/12/cse-102-attacking-recursion.html)
+-[Tutorial](http://zobayer.blogspot.com/2009/12/cse-102-attacking-recursion.html)
 
-[Problem Links](http://zobayer.blogspot.com/2009/12/cse-102-practice-recursions.html)
-
+-[Problem Links](http://zobayer.blogspot.com/2009/12/cse-102-practice-recursions.html)
+------------------------------
 Problem 1:
 
 ```
