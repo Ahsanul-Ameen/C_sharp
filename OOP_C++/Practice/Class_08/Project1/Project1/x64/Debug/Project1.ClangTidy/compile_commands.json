@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "E:\\OneDriveLocation\\OneDrive - BUET\\Documents\\Visual Studio 2022\\Dev\\Projects\\Project1\\Project1",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"E:\\OneDriveLocation\\OneDrive - BUET\\Documents\\Visual Studio 2022\\Dev\\Projects\\Project1\\Project1\\Main.cpp\"",
+    "file": "E:\\OneDriveLocation\\OneDrive - BUET\\Documents\\Visual Studio 2022\\Dev\\Projects\\Project1\\Project1\\Main.cpp"
+  }
+]

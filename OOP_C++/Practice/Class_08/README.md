@@ -324,3 +324,160 @@ Output:
 ********************************************
 
 ```
+--------------------
+
+Recursive Tree Traversal : Visual Studio C++ Project1
+
+-Sample output:
+
+```
+
+path : ..\
+        ╠═ .
+        ╠═ ..
+        ╠═ .vs
+        ║   ╠═ .
+        ║   ╠═ ..
+        ║   ╠═ Project1
+        ║   ║   ╠═ .
+        ║   ║   ╠═ ..
+        ║   ║   ╠═ v17
+        ║   ║   ║   ╠═ .
+        ║   ║   ║   ╠═ ..
+        ║   ║   ║   ╠═ .suo
+        ║   ║   ║   ╠═ Preview
+        ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ╠═ Browse.VC.db
+        ║   ║   ║   ║   ╠═ Browse.VC.db-shm
+        ║   ║   ║   ║   ╠═ Browse.VC.db-wal
+        ║   ║   ║   ║   ╠═ Browse.VC.opendb
+        ║   ║   ║   ║   ╠═ ipch
+        ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ╠═ AutoPCH
+        ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ╠═ 10f5da36ef0ae86b
+        ║   ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ╠═ 3638c32bee775b84
+        ║   ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ╠═ 46e8d6a38afc1ce5
+        ║   ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ║   ╠═ MAIN.ipch
+        ║   ║   ║   ║   ║   ║   ╠═ 9293ade62e8e8aca
+        ║   ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ║   ╠═ MAIN.ipch
+        ║   ║   ║   ║   ║   ║   ╠═ c33920252a9d8408
+        ║   ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ╠═ d94d0b0636902840
+        ║   ║   ║   ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ║   ║   ║   ╠═ MAIN.ipch
+        ╠═ Debug
+        ║   ╠═ .
+        ║   ╠═ ..
+        ║   ╠═ Project1.exe
+        ║   ╠═ Project1.pdb
+        ╠═ Project1
+        ║   ╠═ .
+        ║   ╠═ ..
+        ║   ╠═ Debug
+        ║   ║   ╠═ .
+        ║   ║   ╠═ ..
+        ║   ║   ╠═ Main.obj
+        ║   ║   ╠═ Project1.exe.recipe
+        ║   ║   ╠═ Project1.ilk
+        ║   ║   ╠═ Project1.log
+        ║   ║   ╠═ Project1.tlog
+        ║   ║   ║   ╠═ .
+        ║   ║   ║   ╠═ ..
+        ║   ║   ║   ╠═ CL.command.1.tlog
+        ║   ║   ║   ╠═ CL.read.1.tlog
+        ║   ║   ║   ╠═ CL.write.1.tlog
+        ║   ║   ║   ╠═ link.command.1.tlog
+        ║   ║   ║   ╠═ link.read.1.tlog
+        ║   ║   ║   ╠═ link.write.1.tlog
+        ║   ║   ║   ╠═ Project1.lastbuildstate
+        ║   ║   ╠═ vc142.idb
+        ║   ║   ╠═ vc142.pdb
+        ║   ╠═ dirent.h
+        ║   ╠═ Main.cpp
+        ║   ╠═ Project1.vcxproj
+        ║   ╠═ Project1.vcxproj.filters
+        ║   ╠═ Project1.vcxproj.user
+        ║   ╠═ x64
+        ║   ║   ╠═ .
+        ║   ║   ╠═ ..
+        ║   ║   ╠═ Debug
+        ║   ║   ║   ╠═ .
+        ║   ║   ║   ╠═ ..
+        ║   ║   ║   ╠═ CodeAnalysisResultManifest.txt
+        ║   ║   ║   ╠═ Main.nativecodeanalysis.sarif
+        ║   ║   ║   ╠═ Main.nativecodeanalysis.xml
+        ║   ║   ║   ╠═ Main.obj
+        ║   ║   ║   ╠═ NativeCodeAnalysis.read.1.tlog
+        ║   ║   ║   ╠═ Project1.Build.CppClean.log
+        ║   ║   ║   ╠═ Project1.ClangTidy
+        ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ╠═ compile_commands.json
+        ║   ║   ║   ╠═ Project1.ClangTidy.log
+        ║   ║   ║   ╠═ Project1.exe.recipe
+        ║   ║   ║   ╠═ Project1.ilk
+        ║   ║   ║   ╠═ Project1.log
+        ║   ║   ║   ╠═ Project1.tlog
+        ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ╠═ CL.command.1.tlog
+        ║   ║   ║   ║   ╠═ CL.read.1.tlog
+        ║   ║   ║   ║   ╠═ CL.write.1.tlog
+        ║   ║   ║   ║   ╠═ link.command.1.tlog
+        ║   ║   ║   ║   ╠═ link.read.1.tlog
+        ║   ║   ║   ║   ╠═ link.write.1.tlog
+        ║   ║   ║   ║   ╠═ Project1.lastbuildstate
+        ║   ║   ║   ╠═ Project1.vcxproj.FileListAbsolute.txt
+        ║   ║   ║   ╠═ vc.nativecodeanalysis.all.xml
+        ║   ║   ║   ╠═ vc142.idb
+        ║   ║   ║   ╠═ vc142.pdb
+        ║   ║   ╠═ Release
+        ║   ║   ║   ╠═ .
+        ║   ║   ║   ╠═ ..
+        ║   ║   ║   ╠═ Main.obj
+        ║   ║   ║   ╠═ Project1.exe.recipe
+        ║   ║   ║   ╠═ Project1.iobj
+        ║   ║   ║   ╠═ Project1.ipdb
+        ║   ║   ║   ╠═ Project1.log
+        ║   ║   ║   ╠═ Project1.tlog
+        ║   ║   ║   ║   ╠═ .
+        ║   ║   ║   ║   ╠═ ..
+        ║   ║   ║   ║   ╠═ CL.command.1.tlog
+        ║   ║   ║   ║   ╠═ CL.read.1.tlog
+        ║   ║   ║   ║   ╠═ CL.write.1.tlog
+        ║   ║   ║   ║   ╠═ link.command.1.tlog
+        ║   ║   ║   ║   ╠═ link.read.1.tlog
+        ║   ║   ║   ║   ╠═ link.write.1.tlog
+        ║   ║   ║   ║   ╠═ Project1.lastbuildstate
+        ║   ║   ║   ╠═ vc142.pdb
+        ╠═ Project1.sln
+        ╠═ x64
+        ║   ╠═ .
+        ║   ╠═ ..
+        ║   ╠═ Debug
+        ║   ║   ╠═ .
+        ║   ║   ╠═ ..
+        ║   ║   ╠═ Project1.exe
+        ║   ║   ╠═ Project1.exe.lastcodeanalysissucceeded
+        ║   ║   ╠═ Project1.pdb
+        ║   ╠═ Release
+        ║   ║   ╠═ .
+        ║   ║   ╠═ ..
+        ║   ║   ╠═ Project1.exe
+        ║   ║   ╠═ Project1.pdb
+
+```

@@ -1,0 +1,2 @@
+E:\OneDriveLocation\OneDrive - BUET\Documents\Visual Studio 2022\Dev\Projects\Project1\x64\Debug\Project1.exe.lastcodeanalysissucceeded
+E:\OneDriveLocation\OneDrive - BUET\Documents\Visual Studio 2022\Dev\Projects\Project1\Project1\x64\Debug\NativeCodeAnalysis.read.1.tlog
