@@ -481,3 +481,99 @@ path : ..\
         ║   ║   ╠═ Project1.pdb
 
 ```
+
+File_Tree : Linux version
+
+```
+Enter path: /home/sabit/Downloads/Download_Contents/Interview_Prep_Books
+path : /home/sabit/Downloads/Download_Contents/Interview_Prep_Books
+        |-- Algorithms-and-Coding-Interviews-master
+        |   |-- chapter_decrease_and_conquer.ipynb
+        |   |-- chapter_search_strategies.ipynb
+        |   |-- Advanced_Search_on_Linear_Data_Structures.ipynb
+        |   |-- chapter_python_comparison_sorting.ipynb
+        |   |-- search_strategies.pdf
+        |   |-- chapter_tree_data_structure_and_traversal.ipynb
+        |   |-- Abstract Data Structures.pdf
+        |   |-- Python Data Structure.pdf
+        |   |-- chapter_combinatorial_search.ipynb
+        |   |-- Colab Codes
+        |   |   |-- .
+        |   |   |-- Colab Notebooks
+        |   |   |   |-- chapter_15_bit_manipulation.ipynb
+        |   |   |   |-- suffix_array.ipynb
+        |   |   |   |-- linear_search_two_pointer.ipynb
+        |   |   |   |-- graph_search_application.ipynb
+        |   |   |   |-- chapter_8_heap_priority_queue.ipynb
+        |   |   |   |-- chapter_6_linear_data_structure.ipynb
+        |   |   |   |-- .
+        |   |   |   |-- chapter_14_sorting_2.ipynb
+        |   |   |   |-- chapter_6_linear_data_structure.depre.ipynb
+        |   |   |   |-- chapter_14_sorting.ipynb
+        |   |   |   |-- tree_search.ipynb
+        |   |   |   |-- ..
+        |   |   |   |-- graph_data_structure.ipynb
+        |   |   |   |-- tree_data_structure.ipynb
+        |   |   |   |-- graph_search.ipynb
+        |   |   |-- ..
+        |   |-- bit manipulation.pdf
+        |   |-- tree_questions.pdf
+        |   |-- .
+        |   |-- sorting_algorithms_with_python3.pdf
+        |   |-- README.md
+        |   |-- backtracking.pdf
+        |   |-- decrease_and_conquer.pdf
+        |   |-- chapter_python_datastrcutures.ipynb
+        |   |-- combinatorial_search.pdf
+        |   |-- binary_search.pdf
+        |   |-- advanced_search_on_linear_data_structures.pdf
+        |   |-- chapter_sorting_and_selection_algorithms.ipynb
+        |   |-- linear_data_structure.pdf
+        |   |-- ..
+        |   |-- heap_priority_queue.pdf
+        |   |-- two_pointer.pdf
+        |-- .
+        |-- Coding Ebooks
+        |   |-- Algorithms
+        |   |   |-- The Algorithm Design Manual by Steven S. Skiena.pdf
+        |   |   |-- Introduction to Algorithms - 3rd Edition.pdf
+        |   |   |-- Elementary Algorithms.pdf
+        |   |   |-- Algorithm Design by Jon Kleinberg, Eva Tardos.pdf
+        |   |   |-- Algorithhms 4th Edition by Robert Sedgewick, Kevin Wayne.pdf
+        |   |   |-- .
+        |   |   |-- Introduction to Algorithms by Udi Manber.pdf
+        |   |   |-- Algorithms by Vazirani and Dasgupta.pdf
+        |   |   |-- ..
+        |   |   |-- Dynamic Programming for Coding Interviews A Bottom-Up Approach to Problem Solving by Meenakshi , Kamal Rawat (z-lib.org).pdf
+        |   |-- .
+        |   |-- .DS_Store
+        |   |-- Interview Prep
+        |   |   |-- 1_CTCI_6th_ed.pdf
+        |   |   |-- 3_PIE_3rd_ed.pdf
+        |   |   |-- Programming Interview Problems Dynamic Programming (with solutions in Python) by Leonardo Rossi (z-lib.org).pdf
+        |   |   |-- 2_EoPI.pdf
+        |   |   |-- .
+        |   |   |-- Daily Coding Problem.pdf
+        |   |   |-- ..
+        |   |-- Patterns and Design
+        |   |   |-- Head_First_Design_Patterns_Elisabeth_Freeman_Eric_Freeman(www.ebook-dl.com).pdf
+        |   |   |-- front-end-handbook-2017.pdf
+        |   |   |-- AppNee.com.Design.Patterns.Elements.of.Reusable.Object-Oriented.Software.pdf
+        |   |   |-- .
+        |   |   |-- Patterns of Enterprise Application Architecture - Martin Fowler.pdf
+        |   |   |-- Design Patterns, Elements of Reusable Object-Oriented Software.pdf
+        |   |   |-- ..
+        |   |-- ..
+        |   |-- Languages
+        |   |   |-- Ruby_]learn-to-program.p4_0.pdf
+        |   |   |-- .
+        |   |   |-- ProgrammingPearls2nd.pdf
+        |   |   |-- ..
+        |-- ..
+
+
+
+
+```
+
+----
