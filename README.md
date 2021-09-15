@@ -10,3 +10,7 @@ A repo for my teaching purpose...
 ## ../script.sh Main.CS
 
 Books can be found [here](https://drive.google.com/drive/folders/1AB8VFnfgzv_EJ1Bidj8M40bmoudI5Nf1?usp=sharing)
+
+
+# C and C++
+Well, you can find a lot of codes in the directory named `OOP_C++`
