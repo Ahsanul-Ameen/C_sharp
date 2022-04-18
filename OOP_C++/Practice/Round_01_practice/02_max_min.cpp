@@ -1,6 +1,6 @@
 /**
  * @file 02_max_min.cpp
- * @author your name (you@domain.com)
+ * @author Ahsanul Ameen (ahsanulsabit7@gmail.com)
  * @brief Given an array find its 1st and 2nd max, min in a single loop
  * @version 0.1
  * @date 2022-04-18
