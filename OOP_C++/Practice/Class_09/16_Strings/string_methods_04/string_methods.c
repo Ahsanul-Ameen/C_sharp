@@ -48,8 +48,8 @@ char *strcat(char *s1, register const char *s2)
 
 int strcmp(register const char *s1, register const char *s2)
 {
-	while (*s1 == *s2)			/* move until mismatch found */
+	while (*s1 && (*s1 == *s2))			/* move until mismatch found in valid characters */
 		++s1, ++s2;				/* don't use < while (*s1++ == *s2++); >, see test_loop.c for more details */
 	
-	return (*s1 - *s2);			/* diff can be -ve or zero or +ve */
+	return (*s1 - *s2);			/* diff can be -ve or zero(null - null) or +ve */
 }
