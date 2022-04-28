@@ -150,7 +150,8 @@ public class Starter {
       // st.Push(ch);
       if (st.Count == 0) {
         st.Push(ch);
-      } else {
+      } 
+      else {
         if (st.Peek() == '@') {
           st.Pop();
           if (st.Count > 0 && st.Peek() == ch) {
@@ -160,7 +161,8 @@ public class Starter {
             st.Push('@');
             st.Push(ch);
           }
-        } else {
+        } 
+        else {
           if (ch != st.Peek()) {
             char lastChar = st.Peek();
             st.Pop();
